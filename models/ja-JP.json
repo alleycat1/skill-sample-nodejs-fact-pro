@@ -1,0 +1,92 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "change me",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNewFactIntent",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "事実",
+            "{factType}ファクト",
+            "事実を教えてください",
+            "{factType} の事実を教えてください",
+            "私に事実を教えてください",
+            "雑学クイズを教えて",
+            "{factType} の雑学クイズを教えてください",
+            "雑学クイズをください",
+            "{factType} の雑学クイズをください",
+            "情報を教えてください",
+            "{factType} 情報を教えてください",
+            "何か教えて",
+            "何か私にください"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AddNewFact",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "新しいトピックとして {factType} を追加します",
+            "{factType} を新しいトピックとして保存します",
+            "{factType} をお気に入りのトピックとして追加",
+            "{factType} をお気に入りのトピックとして保存する",
+            "{factType} をお気に入りのファクトトピックとして追加します",
+            "{factType} をお気に入りのファクトトピックとして保存する"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "FactType",
+          "values": [
+            {
+              "name": {
+                "value": "スペース"
+              }
+            },
+            {
+              "name": {
+                "value": "フットボール"
+              }
+            },
+            {
+              "name": {
+                "value": "フットボール"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

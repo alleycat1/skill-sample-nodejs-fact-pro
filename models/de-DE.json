@@ -1,0 +1,92 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "change me",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNewFactIntent",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "et faktum",
+            "en {factType} kendsgerning",
+            "fortæl mig en kendsgerning",
+            "fortæl mig en {factType} kendsgerning",
+            "giv mig et faktum",
+            "fortæl mig trivia",
+            "fortæl mig en {factType} trivia",
+            "giv mig trivia",
+            "giv mig en {factType} trivia",
+            "giv mig nogle oplysninger",
+            "giv mig nogle {factType} oplysninger",
+            "Fortæl mig noget",
+            "giv mig noget"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AddNewFact",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "tilføj {factType} som et nyt emne",
+            "gem {factType} som et nyt emne",
+            "tilføj {factType} som yndlingsemne",
+            "gem {factType} som yndlingsemne",
+            "tilføj {factType} som et yndlingsfakta -emne",
+            "gem {factType} som et yndlingsfakta -emne"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "FactType",
+          "values": [
+            {
+              "name": {
+                "value": "Plads"
+              }
+            },
+            {
+              "name": {
+                "value": "Fodbold"
+              }
+            },
+            {
+              "name": {
+                "value": "Fodbold"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

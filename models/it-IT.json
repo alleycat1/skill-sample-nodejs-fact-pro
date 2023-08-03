@@ -1,0 +1,91 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "change me",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNewFactIntent",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "un fatto",
+            "un fatto {factType}",
+            "dimmi un fatto",
+            "dimmi un fatto {factType}",
+            "dammi un dato di fatto",
+            "dimmi curiosità",
+            "dimmi una curiosità {factType}",
+            "dammi curiosità",
+            "dammi una curiosità {factType}",
+            "give me some information",
+            "dammi alcune informazioni {factType}",
+            "Dimmi qualcosa"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AddNewFact",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "aggiungi {factType} come nuovo argomento",
+            "salva {factType} come nuovo argomento",
+            "aggiungi {factType} come argomento preferito",
+            "salva {factType} come argomento preferito",
+            "aggiungi {factType} come argomento preferito sui fatti",
+            "salva {factType} come argomento preferito sui fatti"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "FactType",
+          "values": [
+            {
+              "name": {
+                "value": "Spazio"
+              }
+            },
+            {
+              "name": {
+                "value": "Calcio"
+              }
+            },
+            {
+              "name": {
+                "value": "Calcio"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

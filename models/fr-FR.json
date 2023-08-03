@@ -1,0 +1,92 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "change me",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNewFactIntent",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "un fait",
+            "un fait {factType}",
+            "dis moi un fait",
+            "dites-moi un fait {factType}",
+            "donne moi un fait",
+            "dis-moi des anecdotes",
+            "dites-moi une anecdote {factType}",
+            "donne moi des anecdotes",
+            "donnez-moi une anecdote {factType}",
+            "donne moi des infos",
+            "donnez-moi des informations {factType}",
+            "dis moi quelque chose",
+            "donne moi quelque chose"
+          ]
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AddNewFact",
+          "slots": [
+            {
+              "name": "factType",
+              "type": "FactType"
+            }
+          ],
+          "samples": [
+            "ajouter {factType} comme nouveau sujet",
+            "enregistrer {factType} en tant que nouveau sujet",
+            "ajouter {factType} comme sujet favori",
+            "enregistrer {factType} comme sujet favori",
+            "ajouter {factType} comme sujet de fait favori",
+            "enregistrer {factType} en tant que sujet de fait préféré"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "FactType",
+          "values": [
+            {
+              "name": {
+                "value": "Espace"
+              }
+            },
+            {
+              "name": {
+                "value": "Football"
+              }
+            },
+            {
+              "name": {
+                "value": "Football"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
